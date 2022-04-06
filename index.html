@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="heading">Height Convertor</div>
+    <table>
+        
+        <tr>
+            <td>
+            <label for="first">Feet+Inches</label> <br>
+            <input type="number" id="first" oninput="ConvertFtIn()" placeholder="Feet">
+            <span>ft</span>
+            <input type="number" id="second" oninput="ConvertFtIn()" placeholder="Inches">
+            <span> in</span>    
+        </td>
+        </tr>
+
+        <tr>
+            <td><label for="third">Feet</label>
+                <input type="number" id="third" oninput="ConvertFt()" placeholder="Feet">
+                <span>ft</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="fourth">Inches</label>
+                <input type="number" id="fourth" oninput="ConvertIn()" placeholder="Inches">
+                <span>in</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="fifth">Meter+Centimeter</label> <br>
+            <input type="number" id="fifth" oninput="ConvertMtCm()" placeholder="Meters">
+            <span>mtr</span>
+            <input type="number" id="sixth" oninput="ConvertMtCm()" placeholder="Centimeter"> <span>cm</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="seventh">Meter</label>     
+            <input type="number" id="seventh" oninput="ConvertMt()" placeholder="Meters">
+            <span>mtr</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="eighth">Centimeter</label>
+            <input type="number" id="eighth" oninput="ConvertCm()" placeholder="Centimeter">
+            <span>cm</span>
+            </td>
+        </tr>
+    </table>
+    <button onclick="reset()">x Reset</button>    
+    </div>
+    <footer>Collection: Basic by <a href="https://github.com/sagarsam96" target="_blank">Sagar Sameer</a></footer>
+     
+    
+    <script src="index.js"></script>
+</body>
+</html>
